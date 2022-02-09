@@ -94,9 +94,11 @@ const searchQoutes = (serachValue) => {
           `https://api.codetabs.com/v1/proxy/?quest=https://imsea.herokuapp.com/api/10?q=${author}`,
           (data) => {
             const { error, status, response } = data;
-            const { results } = response;
-            const imgLink = results[0];
-            createQuoteContent(".cards-container", content, author, imgLink);
+            if (response) {
+              const { results } = response;
+              const imgLink = results[0];
+              createQuoteContent(".cards-container", content, author, imgLink);
+            }
           }
         );
       });

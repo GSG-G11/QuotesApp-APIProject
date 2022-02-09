@@ -28,27 +28,40 @@ img {
   justify-content: center;
 }
 
-h1{
+h1 {
   /* border: 10px solid purple; */
-  font-family:Poppins;
+  font-family: Poppins;
   font-size: 18px;
   width: 80%;
-  font-weight:600;
+  font-weight: 600;
   margin: 120px 69px 0px 64px;
   text-align: center;
 }
 
-.get-started{
+.get-started {
   padding: 15px;
-  background-color: #C39292;
+  background-color: #c39292;
   margin-top: 140px;
   border-radius: 15px;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: black;
   font-size: 15px;
-  font-weight:600;
+  font-weight: 600;
+}
 
+@media only screen and (min-width: 600px) {
+  .img-container {
+    width: 500px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  .get-started {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 1000px) {
 }

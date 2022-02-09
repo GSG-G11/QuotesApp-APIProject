@@ -62,7 +62,7 @@ const createErorrMessage = (element, erorr) => {
 
 const trimArr = (arr) => {
   const filterArr = [...arr];
-  // if (filterArr.length < 12) return filterArr;
+
   return filterArr.splice(0, 12);
 };
 

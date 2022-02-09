@@ -4,7 +4,7 @@ const createQuoteContent = (element, quote, auth, urlImg) => {
   card.setAttribute("class", "card");
   container.appendChild(card);
 
-  const imgAndContentContainer = document.createElement("p");
+  const imgAndContentContainer = document.createElement("div");
   imgAndContentContainer.setAttribute("class", "img-and-content");
   card.appendChild(imgAndContentContainer);
 

@@ -20,3 +20,13 @@ const fetch = (link, cb) => {
   xhr.open("GET", link);
   xhr.send();
 };
+
+
+const createErorrMessage=(element,erorr) => {
+    const container=document.querySelector(element)
+    container.textContent=`${error}`
+    
+}
+
+
+

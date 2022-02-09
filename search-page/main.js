@@ -21,12 +21,15 @@ const fetch = (link, cb) => {
   xhr.send();
 };
 
+const createErorrMessage = (element, erorr) => {
+  const container = document.querySelector(element);
+  container.textContent = `${error}`;
+};
 
-const createErorrMessage=(element,erorr) => {
-    const container=document.querySelector(element)
-    container.textContent=`${error}`
-    
-}
+const trimArr = (arr) => {
+  const filterArr = [...trimArr];
+  return filterArr.splice(0, 12);
+};
 
 
 

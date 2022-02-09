@@ -38,3 +38,44 @@ img {
 .icon {
   font-size: 20px;
 }
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-and-content {
+  display: flex;
+}
+
+.card {
+  margin: 10px;
+  width: 90vw;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+.card:nth-child(n) {
+  background-color: #776baa;
+}
+.card:nth-child(2n) {
+  background-color: rgb(195, 146, 146);
+}
+.quote-content {
+  color: white;
+  margin-left: 10px;
+}
+.author-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.author-name {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+.img-container {
+  width: 70px;
+  object-fit: cover;
+}

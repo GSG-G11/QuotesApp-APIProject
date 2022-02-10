@@ -60,10 +60,10 @@ const createErorrMessage = (element, erorr) => {
   container.textContent = `${erorr}`;
 };
 
-const trimArr = (arr) => {
-  const filterArr = [...arr];
+const spliceArr = (arr) => {
+  const cloneArr = [...arr];
 
-  return filterArr.splice(0, 12);
+  return cloneArr.splice(0, 12);
 };
 
 const toggleDisplay = (element) => {
@@ -87,8 +87,8 @@ const searchQoutes = (serachValue) => {
 
       //function to take the first 10 values
 
-      const trimmedResults = trimArr(results);
-      trimmedResults.forEach((ele) => {
+      const splicedResults = spliceArr(results);
+      splicedResults.forEach((ele) => {
         const { content, author } = ele;
         fetch(
           `https://api.codetabs.com/v1/proxy/?quest=https://imsea.herokuapp.com/api/10?q=${author}`,
